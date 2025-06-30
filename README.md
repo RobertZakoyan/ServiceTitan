@@ -1,2 +1,4 @@
 # ServiceTitan
-Task
+While working on this task, I noticed that some rows in the dataset had missing or incomplete values for example, an item might not have a category or the price might be in an unexpected format. THe task instructions didn't specifically say whether such rows should be removed or kept, so I decided Instead
+of dropping them, include them because they still contain useful information. Even if one or two fields are missing, we can still learn something from the rest of the data, like which customer placed the order or what product it was. In some cases, I used fallback values (setting the category to "Misc" if is wasn't clear)
+and in other cases, I skipped the specific values that couldn't be parsed but kept the rest of the row. This approach allowed me to keep the dataset as complete as possible while still making sure it's clean and ready for analysis.
